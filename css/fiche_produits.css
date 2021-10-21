@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* FOND D'ECRAN */
+html:before {
+
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background: url("/images/background/wp6477824-valorant-viper-ultra-hd-wallpapers.png");
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */     
+    -webkit-filter: blur(7px);
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+
+  }
+/* BODY */
+  body{
+
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+/* DEBUT BARRE DE NAVIGUATION */
+nav{
+
+    z-index: 1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+
+  width: 100px;
+  cursor: pointer;
+
+}
+
+nav .onglets{
+    
+    display: flex;
+    flex-wrap:wrap;
+
+}
+nav .onglets a{
+
+    color: white;
+    font-size: 17px;
+    margin-right: 10px;
+    text-decoration: none;
+
+}
+nav .onglets a:hover{
+
+    color:#FF4655;
+    font-weight: bold;
+  
+}
+nav .onglets input{
+
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border:none;
+    background-color: #f2f2f2;
+    outline:none;
+
+}
+/* FIN BARRE DE NAVIGUATION */
+
+/* DEBUT HEADER */
+header{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+}
+header h1{
+
+    font-size: 50px;
+    max-width: 605px;
+    text-align:center;
+    color: white;
+
+}
+/* FIN HEADER */
+
+/* DEBUT SECTION PRINCIPAL */
+.principal{
+
+    margin: 20px;
+    margin-top: 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+  }
+    /* DEBUT CARTES */
+    .cartes{
+
+        display:flex;
+        flex-wrap:wrap;
+
+      }
+      .carrtes .carte{
+
+        border-right:2px solid white ;
+        border-left:2px solid white ;
+        border-radius: 20%;
+        margin-right: 20px;
+        margin: 20px 10px;
+       
+      }
+      .cartes .carte img{
+
+        padding: 20px;
+        max-width: 350px;
+        min-width: 200px;
+        max-height: 140px;
+        min-height: 110px;
+
+      }
+      
+      .cartes .carte .carte-en-tete{
+
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        
+      }
+      .cartes .carte .carte-en-tete .titre{
+
+      margin: auto;
+      padding-bottom: 30px;
+      color: white;
+        
+      }
+    /* FIN CARTES */
+
+    /* DEBUT DESCRIPTION */
+    .principal .description-vandal .description{
+
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        max-width: 700px;
+      
+      }
+      .principal .description-vandal .avant-video{
+    
+        font-size: 20px;
+        color: white;
+        
+    
+      }
+    /* FIN DESCRIPTION */
+
+    /* DEBUT VIDEO SKIN */
+    .principal .video{
+
+        margin-top: 80px;
+        width: 95%;
+
+      }
+      .principal .video iframe{
+
+        border:none;
+        border-radius: 10px;
+        width: 100%;
+        height: 600px;
+
+      }
+    /* FIN VIDEO SKIN */
+
+/* FIN SECTION PRINCIPAL */
+
+/* DEBUT AJOUTER AU PANIER */
+.ajouter-au-panier button{
+
+    padding: 10px;
+    font-size: 20px;
+    border:none;
+    border-radius: 5px;
+    outline:none;
+    cursor:pointer;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 100px;
+
+  }
+  .ajouter-au-panier button .cart{
+
+    padding-left: 20px;
+
+  }
+  .ajouter-au-panier button:hover{
+
+    background-color:steelblue;
+    color: white;
+    font-style: italic;
+    
+  }
+/* FIN AJOUTER AU PANIER */
+
+/* DEBUT DEBLOQUAGE */
+  .amelioration .debloquage h2{
+
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 50px;
+
+  }
+  .amelioration .debloquage p{
+
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 30px;
+
+  }
+/* FIN DEBLOQUAGE */
+
+/* DEBUT PIED DE PAGE */
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  footer .social{
+    display: flex;
+  }
+  
+  footer .social p{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width: 20px;
+    cursor:pointer;
+  }
+  footer .social p:hover{
+    color: #FF4655;
+    border-color: #FF4655;
+  }
+/* FIN PIED DE PAGE */
+
+/* DEBUT RESPONSIVE */
+
+/* FIN RESPONSIVE */

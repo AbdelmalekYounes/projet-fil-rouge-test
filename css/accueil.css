@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* FOND D'ECRAN */
+html:before {
+
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background: url("/images/background/test.png");
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */     
+    filter: blur(10px);
+
+  }
+/* BODY */
+  body{
+
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+  /* Barre de navigation */
+nav{
+
+    z-index: 1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+
+    width: 100px;
+    cursor: pointer;
+
+}
+
+
+/* DEBUT TEXTE SUR VIDEO */
+.principal .text-sur-video h1{
+
+    font-size: 100px;
+    color: #FF4655;
+    font-style: italic;
+
+  }
+  .principal .text-sur-video h2{
+
+    font-size: 50px;
+    color: white;
+    margin-bottom: 70px;
+    margin-top: -20px;
+   
+  }
+  .principal .text-sur-video p{
+
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+
+  }
+  .principal .text-sur-video .bouton-naviguer button{
+
+    padding: 15px 20px;
+    font-size: 30px;
+    border:none;
+    border-radius: 5px;
+    outline:none;
+    cursor:pointer;
+    margin-top: 20px;
+
+  }
+  .principal .text-sur-video .bouton-naviguer button .plane{
+
+    padding-left: 20px;
+
+  }
+  .principal .text-sur-video .bouton-naviguer button:hover{
+
+    background-color:steelblue;
+    color: white;
+    font-style: italic;
+
+  }

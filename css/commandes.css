@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* FOND D'ECRAN */
+html:before {
+
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background: url("/images/background/omen.png");
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */     
+    filter: blur(8px);
+
+}
+/* BODY */
+body{
+
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+/* DEBUT BARRE DE NAVIGUATION */
+nav{
+
+    z-index: 1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+
+  width: 100px;
+  cursor: pointer;
+
+}
+
+nav .onglets{
+    
+    display: flex;
+    flex-wrap:wrap;
+
+}
+nav .onglets a{
+
+    color: white;
+    font-size: 17px;
+    margin-right: 10px;
+    text-decoration: none;
+
+}
+nav .onglets a:hover{
+
+    color:#FF4655;
+    font-weight: bold;
+  
+}
+
+header{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+header .boite{
+
+    padding-left: 20px;
+
+}
+header h1{
+    
+    text-align: center;
+    background-color: white;
+    width: 800px;
+    height: 150px;
+    padding: 30px;
+
+}
+
+.principal{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+.principal .liste-commandes{
+
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+.principal .liste-commandes .liste-commande .progression{
+
+    width: 100%;
+    height: 40px;
+    
+    
+    
+}
+.principal .liste-commandes .liste-commande  .barre-horizontale{
+
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.principal .liste-commandes .commande{
+
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    border: none;
+    border-radius: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+}
+.principal .liste-commandes .commande .carte {
+
+   border: 3px solid #f2f2f2;
+   margin: 10px;
+    
+    
+
+}
+.principal .liste-commandes .commande .carte img{
+
+    width: 250px;
+    border-color: #f2f2f2;
+    height: 70px;
+    
+    
+
+}
+.principal .liste-commandes .commande .barre-horizontale{
+
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    margin-top: 50px;
+    
+    
+
+}
+
+
+.principal .liste-commandes .commande button{
+
+    padding:20px;
+    width: 200px;
+    background-color: transparent;
+    border: 3px solid #f2f2f2;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* DEBUT PEID DE PAGE */
+footer {
+
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  
+  }
+  footer .social{
+  
+    display: flex;
+  
+  }
+  footer .social p{
+  
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width: 20px;
+    cursor:pointer;
+  
+  }
+  footer .social p:hover{
+  
+    color: #FF4655;
+    border-color: #FF4655;
+  }
+  /* FIN DU PIED DE PAGE */

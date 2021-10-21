@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* FOND D'ECRAN */
+html:before {
+
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background: url("/images/background/BG.png");
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */     
+    filter: blur(8px);
+    filter: hue-rotate(45deg);
+
+  } 
+/* BODY */
+  body{
+    
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+/*DEBUT BARRE DE NAVIGUATION  */
+nav{
+
+    z-index: 1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+
+    width: 100px;
+    cursor: pointer;
+
+}
+
+nav .onglets{
+    
+    display: flex;
+    flex-wrap:wrap;
+
+}
+nav .onglets a{
+
+    color: white;
+    font-size: 17px;
+    margin-right: 10px;
+    text-decoration: none;
+
+}
+nav .onglets a:hover{
+
+    color:#FF4655;
+    font-weight: bold;
+  
+}
+nav .onglets input{
+
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border:none;
+    background-color: #f2f2f2;
+    outline:none;
+
+}
+/* FIN BARRE DE NAVIGUATION */
+
+/* DEBUT SECTION PRINCIPAL FLEX */
+.principal{
+
+    display: flex;
+    justify-content: center;
+    
+
+}
+.principal .info .mon-panier,.skin,.sous-total{
+
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding: 20px;
+    max-width: 700px;
+    min-width: 500px;
+    border-radius: 10px;
+
+}
+.principal .info .mon-panier{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.principal .info .skin{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.principal .info .skin .carte{
+
+    margin-right: 20px;
+    margin: 20px 10px;
+    text-align: center;
+
+}
+.principal .info .skin .prix{
+
+    text-align: center;
+
+}
+.principal .info .skin .carte .carte-en-tete h4{
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.principal .info .skin .carte img{
+
+    max-width: 256px;
+    max-height: 84px;
+
+}
+.principal .info .skin .croix i{
+
+    cursor: pointer;
+
+}
+.principal .info .skin .croix i:hover{
+
+    color: #FF4655;
+
+}
+.principal .info .skin .barre-horizontale{
+
+    height: 3px;
+    width: 100%;
+    background-color: black;
+
+}
+.principal .info .sous-total{
+    
+    height: 60px;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.principal .info .sous-total h3{
+    
+    padding-right: 30px;
+
+}
+
+
+.principal .paiement{
+
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    height: 500px;
+    
+
+}
+.principal .paiement .barre-horizontale{
+
+    background-color: black;
+    height: 1px;
+    width: 100%;
+}
+.principal .paiement .icones{
+
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 60px;
+    margin-top: -15px;
+
+}
+.principal .paiement .icones p{
+
+    padding:20px;
+    margin-bottom: -10px;
+}
+.principal .paiement .livraison{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.principal .paiement .livraison h3{
+    width:300px ;
+}
+.principal .paiement .livraison h4{
+    width:100px ;
+}
+.principal .paiement .livraison .info{
+
+    cursor: pointer;
+
+}
+.principal .paiement .livraison .info:hover{
+
+    color: #FF4655;
+
+}
+.principal .paiement .moyen-paiement button{
+
+    padding: 10px;
+    font-size: 20px;
+    border:none;
+    border-radius: 5px;
+    outline:none;
+    cursor:pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    width: 100%;
+    background-color: #008041;
+    color: white;
+
+}
+.principal .paiement .moyen-paiement button:hover{
+
+    background-color: black;
+    color: white;
+
+}
+.principal .autres-skins{
+
+    background-color: #f2f2f2;
+    width: 700px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 570px;
+
+}
+.principal .autres-skins .barre-horizontale{
+
+    background-color: black;
+    height: 1px;
+    width: 100%;
+
+}
+.principal .autres-skins .caroussel .caroussel-skins{
+
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+
+}
+.principal .autres-skins .caroussel .caroussel-skins .caroussel-skin{
+
+    margin-left: 1rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 450px;
+    
+
+}
+.principal .autres-skins .caroussel .caroussel-skins .caroussel-skin .carte img{
+
+    height: 124px;
+
+}
+.principal .autres-skins .caroussel .caroussel-skins .caroussel-skin .carte .carte-contenu p{
+
+    margin: 20px;
+    font-style: italic;
+
+}
+.principal .autres-skins .caroussel .caroussel-skins .caroussel-skin .carte .carte-contenu a{
+
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 8px;
+    margin-left: 50%;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+
+}
+.principal .autres-skins .caroussel .caroussel-skins li{
+
+    list-style: none;
+    margin-right: 30px;
+
+}
+/* FIN SECTION PRINCIPAL FLEX */
+
+
+
+
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    height: 50px;
+  }
+  footer .social{
+    display: flex;
+  }
+  
+  footer .social p{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width: 20px;
+    cursor:pointer;
+  }
+  footer .social p:hover{
+    color: #FF4655;
+    border-color: #FF4655;
+  }
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+

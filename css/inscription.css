@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+form{
+    margin-top: 30px;
+    background-color: white;
+    padding: 40px 60px ;
+    border-radius: 10px;
+    min-width: 400px;
+    
+}
+
+form .raze img{
+    position: absolute;
+    width: 500px;
+    z-index: -1;
+    left: 52%;
+    top: 0;
+}
+form .skye img{
+    position: absolute;
+    width: 500px;
+    z-index: -1;
+    right: 55%;
+    top: 0;
+}
+form h1{
+    color:#FF4655 ;
+    text-align: center;
+}
+form .social-media{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+form .inputs input{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    outline: none;
+}
+form p.inscription{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color:darkgray;
+}
+form p.inscription span{
+    font-weight: bold;
+    color:#FF4655 ;
+    cursor: pointer;
+}
+form button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color:#FF4655 ;
+    color: white;
+    font-weight: bold;
+}
+
+form .return-home{
+    cursor: pointer;
+    font-size: 17px;
+}
+.red{color:red;}
