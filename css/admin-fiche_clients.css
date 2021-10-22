@@ -32,9 +32,7 @@ nav{
     background-color: black;
     width: 200px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: inline-block;
 }
 
 nav .onglets{
@@ -49,4 +47,12 @@ nav .onglets a{
 nav .onglets a:hover{
     font-weight: bold;
     color: #FF4655;
+}
+
+.principal .infos{
+    background-color: white;
+    display: flex;
+    
+    width: 500px;
+    
 }
