@@ -3,20 +3,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ValorantSkins</title>
-        <link rel="stylesheet" href="/css/admin-produits.css">
+        <link rel="stylesheet" href="../css/admin-produits.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-        <link rel="icon" type="image/png" href="/images/logos/logo.png">
+        <link rel="icon" type="image/png" href="../images/logos/logo.png">
     </head>
     <body>
         <!-- DEBUT BARRE DE NAVIGUATION -->
         <nav>
-            <img src="/images/logos/logo.png" onclick="window.location.href='/accueil.html';" alt="">
+            <img src="../images/logos/logo.png" onclick="window.location.href='../accueil.html';" alt="">
             <div class="onglets">
-                <a class="link" href="dashboard.html">Dashboard</a>
-                <a class="link" href="utilisateurs.html">Gestion des Utilisateurs</a>
-                <a class="link" href="panel.html">Panel</a>
-                <a class="link" href="/accueil.html">Retourner sur le site</a>
-                <a class="link" href="">Se déconnecter</a>
+                <a class="link" href="./dashboard.html">Dashboard</a>
+                <a class="link" href="./utilisateurs.html">Gestion des Utilisateurs</a>
+                <a class="link" href="./commandes.html">Gestions des Commandes</a>
+                <a class="link" href="./panel.html">Panel</a>
+                <a class="link" href="../accueil.html">Retourner sur le site</a>
+                <!-- <a class="link" href="">Se déconnecter</a> -->
               
             </div>
         </nav>
@@ -25,22 +26,51 @@
         <section class="principal">
             <div class="formulaire-creation">
                 <div class="titre">
-                    <h3>AJOUTER UN SKIN</h3>
+                    <h3 align="center">AJOUTER UN SKIN</h3>
                 </div>
                 <div class="formulaire">
                     <form>
-                        <input type="text" placeholder="Nom">
-                        <input type="text" placeholder="Prix">
+                        <input class="creation" type="text" placeholder="Nom">
+                        <input class="creation" type="text" placeholder="Prix">
+                        <label for="creation">Choisissez une image :</label>
+                        <input class="creation" type="file">
+                        <label for="description">Description du skin :</label>
+                        <textarea class="description" cols="10" rows="5"></textarea>
+                        <input class="creation" type="text" placeholder=" Url vidéo de présentation">
+                        <label for="creation">Choisissez les chromas :</label>
+                        <input class="creation" type="file" multiple>
+                        <input class="bouton-enregistrer" type="submit" value="Enregistrer">
                     </form>
                 </div>
             </div>
             <div class="formulaire-modification">
                 <div class="titre">
-                    <h3>MODIFIER UN SKIN</h3>
+                    <h3 align="center">MODIFIER UN SKIN</h3>
                 </div>
                 <div class="formulaire">
-                    <form>
-
+                    <form align="center">
+                        <select class="skin-selection">
+                            <option value="">--Sélectionnez un skin à modifier--</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">Parrot</option>
+                            <option value="spider">Spider</option>
+                            <option value="goldfish">Goldfish</option>
+                        </select>
+                    </form>
+                    <div class="barre-horizontale"></div>
+                    <form class="modifications">
+                        <input class="modification" type="text" placeholder="Nom" value="Vandal Feu Ancien">
+                        <input class="modification" type="text" placeholder="Prix" value="1500">
+                        <label for="modification">Image :</label>
+                        <input class="modification" type="file">
+                        <label for="description">Description du skin :</label>
+                        <textarea class="description" cols="10" rows="5">Les rafales illimitées sont moins stables, en revanche. Le Vandal continue de faire des dégâts élevés à distance et récompense ceux qui privilégient les tirs au coup par coup en visant la tête.</textarea>
+                        <input class="modification" type="text" placeholder=" Url vidéo de présentation" value="https://www.youtube.com/embed/aopp0L1oE_U?start=2">
+                        <label for="modification">Chromas :</label>
+                        <input class="modification" type="file" multiple>
+                        <input class="bouton-enregistrer" type="submit" value="Enregistrer">
                     </form>
                 </div>
             </div>

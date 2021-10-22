@@ -101,6 +101,10 @@ header h1{
     margin-bottom: 50px;
 
 }
+.principal .liste-commandes .liste-commande  .titre .camion{
+
+    margin-left: 20px;
+}
 .principal .liste-commandes .liste-commande .progression{
 
     width: 100%;
@@ -109,6 +113,7 @@ header h1{
     
     
 }
+
 .principal .liste-commandes .liste-commande  .barre-horizontale{
 
     background-color: black;

@@ -3,22 +3,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ValorantSkins</title>
-        <link rel="stylesheet" href="/css/fiche_commandes.css">
+        <link rel="stylesheet" href="../css/fiche_commandes.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-        <link rel="icon" type="image/png" href="/images/logos/logo.png">
+        <link rel="icon" type="image/png" href="../images/logos/logo.png">
     </head>
     <body>
     <!-- DEBUT BARRE DE NAVIGUATION -->
         <nav>
-            <img src="/images/logos/logo.png" onclick="window.location.href='/accueil.html';" alt="">
+            <img src="../images/logos/logo.png" onclick="window.location.href='../accueil.html';" alt="">
             <div class="onglets">
-                <a class="link" href="panier.html">Panier</a> 
-                <a class="link" href="/produits/liste_produits.html">Liste des Produits</a>
-                <a class="link" href="commandes.html">Mes Commandes</a>
-                <a class="link" href="">Se Déconnecter</a>
-                <a class="link" href="/connexion-inscription/connexion.html">Se Connecter</a>
-                <a class="link" href="/connexion-inscription/inscription.html">S'inscrire</a>
-                <a class="link" href="/administration/panel.html">Panel Admin</a>
+                <a class="link" href="./panier.html">Panier</a> 
+                <a class="link" href="../produits/liste_produits.html">Liste des Produits</a>
+                <a class="link" href="./commandes.html">Mes Commandes</a>
+                <!-- <a class="link" href="">Se Déconnecter</a> -->
+                <a class="link" href="../connexion-inscription/connexion.html">Se Connecter</a>
+                <a class="link" href="../connexion-inscription/inscription.html">S'inscrire</a>
+                <a class="link" href="../administration/panel.html">Panel Admin</a>
             </div>
         </nav>
 
@@ -50,18 +50,44 @@
                     </p>
                 </div>
             </div>
+            <div class="achats">
+                <h3 align="center">VOS ACHATS</h3>
+                <div class="barre-horizontale"></div>
+                <div class="cartes">
+                    <div class="carte">
+                        <img src="../images/armes/phantom/ion/phantom_ion.png" alt="">
+                        <div class="titre">
+                            <h4 align="center">Phantom ION</h4>
+                            <h5 align="center">1500 VP</h5>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <img src="../images/armes/couteau/prime2/couteau_prime2.png" alt="">
+                        <div class="titre">
+                            <h4 align="center">Couteau PRIME V2</h4>
+                            <h5 align="center">1500 VP</h5>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
             <div class="informations-paiement">
-                <h3>INFORMATIONS DE PAIEMENT</h3>
+                <h3 align="center">INFORMATIONS DE PAIEMENT</h3>
                 <div class="barre-horizontale"></div>
                 <p><i class="fab fa-cc-visa fa-lg"> VISA</i></p>
                 
             </div>
             <div class="prix-commande">
-                <h3>TOTAL COMMANDE</h3>
+                <h3 align="center">TOTAL COMMANDE</h3>
                 <div class="barre-horizontale"></div>
                 <div class="flex-commande">
                     <h4>SOUS-TOTAL :</h4>
                     <p>1250 VP</p>
+                </div>
+                <div class="barre-horizontale"></div>
+                <div class="flex-prix">
+                    <h3>TOTAL :</h3>
+                    <h3>1250 VP</h3>
                 </div>
             </div>
         </section>

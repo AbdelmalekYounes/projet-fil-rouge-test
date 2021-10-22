@@ -62,14 +62,81 @@ nav .onglets a:hover{
     align-items: center;
 }
 .principal .formulaire-creation,.formulaire-modification{
-    margin-top: -400px;
+
+    width: 800px;
+    height: 750px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -300px;
 }
 .principal .formulaire-creation{
-    background-color: #f2f2f2;
+    background-color: white;
     margin-bottom: 500px;
-    height: 700px;
+    
 }
+
+.principal .formulaire-creation .formulaire form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.principal .formulaire-creation .formulaire form .creation{
+    padding: 10px;
+   width: 200px;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+.principal .formulaire-creation .formulaire form .description{
+    padding: 10px;
+    margin: 20px;
+    max-width: 95%;
+    max-height: 300px;
+ }
+ .principal .formulaire-creation .formulaire form .bouton-enregistrer{
+    width: 100px;
+    margin-left: 45%;
+    padding: 10px;
+ }
 .principal .formulaire-modification{
-    background-color: #f2f2f2;
-    height: 700px;
+    background-color: white;
+    margin-bottom: 50px;
 }
+.principal .formulaire-modification .formulaire form .skin-selection{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-style: italic;
+
+}
+.principal .formulaire-modification .barre-horizontale{
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.principal .formulaire-modification .formulaire .modifications{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.principal .formulaire-modification .formulaire .modifications .modification{
+    padding: 10px;
+    margin-bottom: 20px;
+   width: 200px;
+   border-radius: 10px;
+   
+}
+.principal .formulaire-modification .formulaire .modifications .description{
+    padding: 10px;
+    margin: 20px;
+    max-width: 95%;
+    max-height: 300px;
+ }
+ .principal .formulaire-modification .formulaire .modifications .bouton-enregistrer{
+    width: 100px;
+    margin-left: 45%;
+    padding: 10px;
+ }
