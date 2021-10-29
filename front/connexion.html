@@ -3,14 +3,14 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ValorantSkins</title>
-        <link rel="stylesheet" href="../css/inscription.css">
+        <link rel="stylesheet" href="../css/connexion.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
         <link rel="icon" type="image/png" href="../images/logos/logo.png">
     </head>
     <body>
         
         <form method="POST">
-            <div class="return-home" onclick="window.location.href='/accueil.html';" align="left">
+            <div class="return-home" onclick="window.location.href='../accueil.html';" align="left">
                 <p><i class="fas fa-arrow-left fa-lg arrow"></i>Retourner a l'accueil</p>
             </div>
             <div class="raze">
@@ -19,26 +19,16 @@
             <div class="skye">
                 <img src="../images/perso/skye.png" alt="">
             </div>
-            
-            <h1>Inscription</h1>
-            
-    
+            <img src="" alt="">
+            <h1>Se connecter</h1>
             <div class="inputs">
-                <input type="text" placeholder="Nom" name="nom" autocomplete="off">
-                <input type="text" placeholder="Prénom" name="prenom" autocomplete="off">
                 <input type="email" placeholder="E-mail" name="email" autocomplete="off">
-                <input type="tel" placeholder="Numéro de Téléphone" name="numero" autocomplete="off">
                 <input type="password" placeholder="Mot de passe" name="mdp" autocomplete="off">
-                <input type="text" placeholder="Adresse" name="adresse" autocomplete="off">
-                <input type="text" placeholder="Code postal" name="cp" autocomplete="off">
-                <input type="text" placeholder="Commune" name="ville" autocomplete="off">
-                
             </div>
-            <p class="inscription">J'ai déja un compte ? Je me <span onclick="window.location.href='./connexion.html';">connecte</span>.</p>
+            <p class="inscription">Je n'ai pas de compte. J'en <span onclick="window.location.href = './inscription.html';">crée</span>  un.</p>
             <div align="center">
-                <button type="submit" name="envoi">S'inscrire</button>
+                <button  type="submit" name="envoi">Se connecter</button>
             </div>
-            
         </form>
     </body>
 </html>

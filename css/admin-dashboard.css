@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* FOND D'ECRAN */
+
 html:before {
 
     content: "";
     position: fixed;
     height: 100%; width: 100%;
-    background: url("/images/background/1085886.png");
+    background: url("../images/background/1085886.png");
     background-size: cover;
     z-index: -1; /* Keep the background behind the content */     
     filter: blur(8px);
@@ -19,8 +20,12 @@ body{
     margin:0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+justify-content: space-between;
 
 }
+
+
 
 nav img{
     width: 100px;
@@ -29,12 +34,11 @@ nav img{
 }
 
 nav{
+
     background-color: black;
     width: 200px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: inline-block;
 }
 
 nav .onglets{
@@ -58,9 +62,7 @@ nav .onglets a:hover{
   
   
 main{
-    margin-top: -50%;
-    margin-left: 25%;
-    margin-right: 25%;
+   margin-right: 10%;
     width: 1200px;
     padding: 2rem 1.5rem;
     min-height: calc(100vh);
@@ -90,7 +92,8 @@ main{
   }
   .card-single:hover{
     background: #008ea1;
-    color: #fff;
+    color: white;
+    
   }
   .composant{
     margin-top: 3.5rem;
@@ -150,21 +153,7 @@ main{
     margin-right: 1rem;
     border-radius: 50%; 
   }
-  .status-produit.color-one{
-    background:  #ec1c24;
-  }
-  .status-produit.color-two{
-    background:  #fff200;
-  }
-  .status-produit.color-three{
-    background:  #b83dba;
-  }
-  .status-produit.color-four{
-    background:  #00a8f3;
-  }
-  .status-produit.color-five{
-    background:  #b83dba;
-  }
+  
   tr td:last-child{
     display: flex;
     align-items: center;
@@ -213,6 +202,7 @@ main{
     display: flex;
     height: 300px;
     align-items: flex-end;
+    padding: 5px;
   }
   .statistique-barre{
     flex-grow: 1;
@@ -295,7 +285,7 @@ main{
   /* mois header */
   .mois-annee {
     padding: 70px 25px;
-    width: 100%;
+    width: 95%;
     background: #008ea1;
     text-align: center;
   }
@@ -317,12 +307,14 @@ main{
   .mois-annee .prev {
     float: left;
     padding-top: 10px;
+    cursor: pointer;
   }
   
   /* Next button */
   .mois-annee .next {
     float: right;
     padding-top: 10px;
+    cursor: pointer;
   }
   
   /* mois (Mon-Sun) */

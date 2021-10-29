@@ -79,4 +79,10 @@ form .return-home{
     cursor: pointer;
     font-size: 17px;
 }
-.red{color:red;}
+form .return-home i{
+    padding-right: 15px;
+}
+form .return-home i:hover{
+    color: #FF4655;
+}
+.red{color:#FF4655;}

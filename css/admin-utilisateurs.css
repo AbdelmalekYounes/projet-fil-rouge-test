@@ -6,7 +6,7 @@ html:before {
     content: "";
     position: fixed;
     height: 100%; width: 100%;
-    background: url("/images/background/1085886.png");
+    background: url("../images/background/1085886.png");
     background-size: cover;
     z-index: -1; /* Keep the background behind the content */     
     filter: blur(8px);

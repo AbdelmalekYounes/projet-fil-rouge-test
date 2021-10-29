@@ -6,10 +6,10 @@ html:before {
     content: "";
     position: fixed;
     height: 100%; width: 100%;
-    background: url("/images/background/wp6477824-valorant-viper-ultra-hd-wallpapers.png");
+    background: url("../images/background/wp6477824-valorant-viper-ultra-hd-wallpapers.png");
     background-size: cover;
     z-index: -1; /* Keep the background behind the content */     
-    -webkit-filter: blur(7px);
+    filter: blur(7px);
     -webkit-background-size: cover; /* pour Chrome et Safari */
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */

@@ -6,7 +6,7 @@ html:before {
     content: "";
     position: fixed;
     height: 100%; width: 100%;
-    background: url("/images/background/1085886.png");
+    background: url("../images/background/1085886.png");
     background-size: cover;
     z-index: -1; /* Keep the background behind the content */     
     filter: blur(8px);
@@ -19,6 +19,8 @@ body{
     margin:0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+justify-content: space-between;
 
 }
 
@@ -48,11 +50,33 @@ nav .onglets a:hover{
     font-weight: bold;
     color: #FF4655;
 }
-
-.principal .infos{
-    background-color: white;
-    display: flex;
-    
-    width: 500px;
+.principal{
+    margin-right: 25%;
     
 }
+
+.principal .infos{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 800px;
+    margin-top: 50px;
+    
+    
+    
+}
+.principal  .barre-horizontale{
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0px;
+ }
+ .principal .infos .info a{
+   text-decoration: none;
+   color: red; 
+}
+.principal .infos .info a:hover{
+    font-weight: bold;
+ }
